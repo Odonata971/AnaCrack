@@ -1,58 +1,130 @@
-#flutter specific
-.flutter-plugins
+# Expo
+.expo
+__generated__
+web-build
+bare-apps
+
+# macOS
 .DS_Store
-.dart_tool/
-.packages
-.pub/
-build/
-android/app/google-services.json
-.idea/
-android/key.properties
-pubspec.lock
-doc/api/
 
-#ios specific
-ios/.generated/
-ios/Podfile*
-ios/Flutter/Debug.xcconfig
-ios/Flutter/Release.xcconfig
-ios/Runner.xcworkspace/contents.xcworkspacedata
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
 
-#android specific
-android/app/google-services.json
-android/key.properties
+# Ruby
+.direnv
 
-# User-specific
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# Env
+.envrc.local
 
-# Generated files
-.idea/**/contentModel.xml
+# Emacs
+*~
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+# Vim
+.*.swp
+.*.swo
+.*.swn
+.*.swm
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+# VS Code
+.vscode/launch.json
 
-# Gradle and Maven with auto-import
-.idea/modules.xml
-.idea/*.iml
-.idea/modules
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.xccheckout
+*.xcscmblueprint
+xcuserdata
+
+# IDEA / Android Studio
 *.iml
+.gradle
+.idea
 
-# File-based project format
-*.iws
+# Eclipse
+.project
+.settings
 
-# IntelliJ
-out/
+# VSCode
+.history/
+/vscode/launch.json
+
+# Android
+*.apk
+*.hprof
+ReactAndroid-temp.aar
+
+# Tools
+jarjar-rules.txt
+
+# Dynamic Macros
+.kernel-ngrok-url
+
+# Template files
+/apps/bare-expo/android/app/google-services.json
+/apps/bare-expo/ios/BareExpo/GoogleService-Info.plist
+
+# Template projects
+templates/**/android/**/generated/*
+templates/**/android/app/build
+templates/**/Pods/**
+templates/**/Podfile.lock
+templates/**/yarn.lock
+
+# Codemod
+.codemod.bookmark
+
+# Fastlane
+/*.cer
+/fastlane/report.xml
+/fastlane/Preview.html
+/fastlane/Deployment
+/fastlane/test_output
+/Preview.html
+/gc_keys.json
+/fastlane/gc_keys.json
+
+# CI
+/android/logcat.txt
+
+# Shell apps
+android-shell-app
+shellAppBase-*
+shellAppIntermediates
+shellAppWorkspaces
+/artifacts/*
+
+# Expo Client builds
+/client-builds
+
+# Expo web env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+apps/bare-expo/deploy-url.txt
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# Expo Doc merging
+docs/pages/versions/*/react-native/ADDED_*.md
+docs/pages/versions/*/react-native/REMOVED_*.md
+docs/pages/versions/*/react-native/*.diff
+
+# Expo Go
+/apps/expo-go/src/dist
+
+# Prebuilds
+/packages/**/*.xcframework
+/packages/**/*.spec.json
+/packages/**/Info-generated.plist
+!crsqlite.xcframework
+
+# iOS
+**/ios/.xcode.env.local
